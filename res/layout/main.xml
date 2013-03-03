@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <ImageView
+       android:id="@+id/imageView1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:padding="5dp"
+       android:src="@drawable/ic_launcher" />
+
+   <EditText
+       android:id="@+id/editText1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="#000000"
+       android:clickable="false"
+       android:cursorVisible="false"
+       android:ems="10"
+       android:focusable="false"
+       android:focusableInTouchMode="false"
+       android:inputType="textMultiLine"
+       android:paddingBottom="40dp"
+       android:paddingTop="35dp"
+       android:text="This app requires Root access. When you choose to Install or Uninstall you will need to Allow Access. Your device will reboot when the process is done. You can check if it works by adding a script to /system/etc/init.d/ after the device has rebooted."
+       android:textColor="#FFFFFF" >
+
+       <requestFocus />
+   </EditText>
+
+    <Button
+        android:id="@+id/btnInstall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:text="Install Init.d" />
+
+    <Button
+        android:id="@+id/btnUninstall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="Uninstall Init.d" />
+	
+</LinearLayout>
+    
+
+ 
